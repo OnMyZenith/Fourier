@@ -58,9 +58,9 @@ function draw() {
   textSize(40);
   fill(0);
   text('Discrete Fourier Transform',170,100);
-  text('About 5000 Circles In Use',750,900);
+  text('About 5000 Circles In Use',750,930);
 
-  let v = epiCycles(width/4, height/4, 0, fourierX);
+  let v = epiCycles(width/2, height/2 +200, 0, fourierX);
   path.unshift(v);
 
   // // fill(255);
