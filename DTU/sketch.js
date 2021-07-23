@@ -40,7 +40,7 @@ function epiCycles(x, y, rotation, fourier) {
     x += radius * cos(freq * time + phase + rotation);
     y += radius * sin(freq * time + phase + rotation);
 
-    stroke(0,100);
+    stroke(0, 100);
     line(prev_x, prev_y, x, y);
 
 
@@ -52,15 +52,15 @@ function epiCycles(x, y, rotation, fourier) {
 function draw() {
   background(255);
 
-  image(img, width/2, 10);
+  image(img, width / 2, 10);
 
-  stroke(0,0,0);
+  stroke(0, 0, 0);
   textSize(40);
   fill(0);
-  text('Discrete Fourier Transform',170,100);
-  text('About 5000 Vectors In Use',750,900);
+  text('Discrete Fourier Transform', 170, 100);
+  text('About 5000 Circles In Use', 750, 900);
 
-  let v = epiCycles(width/4, height/4, 0, fourierX);
+  let v = epiCycles(width / 2, height / 2 + 150, 0, fourierX);
   path.unshift(v);
 
   // // fill(255);
